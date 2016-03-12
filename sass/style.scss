@@ -1,0 +1,69 @@
+@import "../jeet/index.scss";
+@import "base"; 
+@import "breakpoint";
+
+
+.eeContainer{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header{
+	padding: 60px 0 30px;
+	.eeLogo{
+		display: block;
+		width: 251px;
+		height: 238px;
+		margin: 0 auto;
+	}
+}
+
+.eeDefaultWrap{
+	&.eeSocial{
+		text-align: center;
+		padding: 60px 0;
+		
+		ul{
+			display: inline-block;
+			li{
+				float: left;
+				margin-left: 25px;
+				
+				&:first-child{
+					margin-left: 0;
+				}
+				
+				a{
+					display: block;
+					
+					i{
+						font-family: FontAwesome;
+						font-size: 50px;
+						color: $color;
+						transition: all 0.8s;
+					}
+					
+					&:hover{
+						i{
+							color: $color3;
+							transform: translate(10);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	padding: 30px 0;
+	background-color: $color;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	
+	p{
+		color: $color3;
+	}
+}

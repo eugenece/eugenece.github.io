@@ -1,0 +1,85 @@
+$base-font-size: 16px;
+
+@function em($px, $base: $base-font-size) {
+    //@return ($px / $base) * 1em;
+	@return $px;
+}
+
+@mixin mxnBorderRadius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin mxnFontSize($size) {
+  font-size: em($size);
+}
+
+@-webkit-keyframes flipX {
+  0% {
+    opacity:0;
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+    transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(180deg) scale(1);
+    transform: perspective(400px) translateZ(0) rotateY(180deg) scale(1);
+  }
+}
+
+@keyframes flipX {
+  0% {
+    opacity:0;
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+    transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: perspective(400px) translateZ(0) rotateY(180deg) scale(1);
+    transform: perspective(400px) translateZ(0) rotateY(180deg) scale(1);
+  }
+}
+
+$font: "Source Sans Pro", sans-serif;;
+$font2: "Droid Serif", serif;
+$font3: "Montserrat", sans-serif;
+
+$color: #282621;
+$color2: #fff;
+$color3: #4EC3C8;
+
+
+$fontSize: em(8px);
+$fontSize2: em(9px);
+$fontSize3: em(10px);
+$fontSize4: em(12px);
+$fontSize5: em(14px);
+$fontSize6: em(15px);
+$fontSize7: em(16px);
+$fontSize8: em(18px);
+$fontSize9: em(20px);
+$fontSize10: em(21px);
+$fontSize11: em(24px);
+$fontSize12: em(25px);
+$fontSize13: em(26px);
+$fontSize14: em(28px);
+$fontSize15: em(30px);
+$fontSize16: em(52px);
+$fontSize17: em(36px);
+$fontSize18: em(40px);
+$fontSize19: em(42px);
+$fontSize20: em(23px);
+$fontSize21: em(35px);
+$fontSize22: em(38px);
+$fontSize23: em(19px);
+$fontSize24: em(22px);
+$fontSize25: em(80px);
+$fontSize26: em(17px);
+$fontSize27: em(51px);
+$fontSize28: em(33px);
+$fontSize29: em(27px);
+$fontSize30: em(65px);
+$fontSize31: em(59px);
+$fontSize32: em(32px);
