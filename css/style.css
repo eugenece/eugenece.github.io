@@ -184,9 +184,60 @@
     transform: perspective(400px) translateZ(0) rotateY(180deg) scale(1);
   }
 }
+.eePageWrap {
+  position: relative;
+}
+
 .eeContainer {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.eeCode {
+  position: absolute;
+  display: block;
+  font-size: 45px;
+  opacity: 0.5;
+}
+.eeCode.html {
+  color: #282621;
+  top: 10%;
+  left: 25%;
+}
+.eeCode.css {
+  color: #4EC3C8;
+  top: 10%;
+  right: 25%;
+}
+.eeCode.jquery {
+  color: #282621;
+  top: 35%;
+  right: 15%;
+}
+.eeCode.javascript {
+  color: #4EC3C8;
+  top: 35%;
+  left: 15%;
+}
+.eeCode.php {
+  color: #282621;
+  top: 55%;
+  left: 20%;
+}
+.eeCode.mysql {
+  color: #4EC3C8;
+  top: 55%;
+  right: 20%;
+}
+.eeCode.sass {
+  color: #282621;
+  top: 75%;
+  right: 25%;
+}
+.eeCode.java {
+  color: #4EC3C8;
+  top: 75%;
+  left: 25%;
 }
 
 header {

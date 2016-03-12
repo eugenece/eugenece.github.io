@@ -15,23 +15,35 @@
 		<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/animations.css">
 		<link rel="stylesheet" href="css/style.css">
 		
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     </head>
 <body>
 	<div class="eePageWrap" >
+		<section class="animatedParent">
+			<span class="eeCode html animated bounceInLeft delay-1000">HTML</span>
+			<span class="eeCode css animated bounceInRight delay-1000">CSS</span>
+			<span class="eeCode jquery animated bounceInLeft delay-1000">jQuery</span>
+			<span class="eeCode javascript animated bounceInRight delay-1000">Javascript</span>
+			<span class="eeCode php animated bounceInLeft delay-1000">Php</span>
+			<span class="eeCode mysql animated bounceInRight delay-1000">Mysql</span>
+			<span class="eeCode sass animated bounceInLeft delay-1000">SASS</span>
+			<span class="eeCode java animated bounceInRight delay-1000">Java</span>
+		</section>
 		<header>
-			<div class="eeContainer">
-				<a class="eeLogo" href="http://eugenece.github.io" title="Eugene Emapbido" ><img src="images/logo.png" /></a>
+			<div class="eeContainer animatedParent">
+				<a class="eeLogo animated growIn slower" href="http://eugenece.github.io" title="Eugene Emapbido" ><img src="images/logo.png" /></a>
 			</div>
 		</header>
 		<section class="eeDefaultWrap eeSocial" > 
-			<div class="eeContainer">
+			<div class="eeContainer animatedParent">
 				<ul>
-					<li><a href="https://www.facebook.com/gue.edac" target="_blank" class="hvr-wobble-vertical" ><i class="fa fa-facebook-square"></i></a></li>
-					<li><a href="https://plus.google.com/u/0/+EugeneEmpabido" target="_blank" class="hvr-wobble-vertical" ><i class="fa fa-google-plus-square"></i></a></li>
-					<li><a href="https://github.com/eugenece" target="_blank" class="hvr-wobble-vertical" ><i class="fa fa-github-square"></i></a></li>
+					<li><a href="https://www.facebook.com/gue.edac" target="_blank" class="hvr-wobble-vertical animated fadeIn slower" ><i class="fa fa-facebook-square"></i></a></li>
+					<li><a href="https://plus.google.com/u/0/+EugeneEmpabido" target="_blank" class="hvr-wobble-vertical animated fadeIn slower" ><i class="fa fa-google-plus-square"></i></a></li>
+					<li><a href="https://github.com/eugenece" target="_blank" class="hvr-wobble-vertical animated fadeIn slower" ><i class="fa fa-github-square"></i></a></li>
 				</ul>
 			</div>
 		</section>
@@ -41,5 +53,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/css3-animate-it.js"></script>
 </body>
 </html>
