@@ -193,52 +193,108 @@
   margin: 0 auto;
 }
 
-.eeCode {
+@media (max-width: 959px) {
+  .eeCodes {
+    overflow: hidden;
+    padding: 30px 0;
+  }
+}
+.eeCodes .eeCode {
   position: absolute;
   display: block;
   font-size: 40px;
   opacity: 0.5;
   font-family: "Arvo", serif;
 }
-.eeCode.html {
+.eeCodes .eeCode.html {
   color: #282621;
   top: 10%;
   left: 15%;
 }
-.eeCode.css {
+.eeCodes .eeCode.css {
   color: #4EC3C8;
   top: 10%;
   right: 15%;
 }
-.eeCode.jquery {
+.eeCodes .eeCode.jquery {
   color: #282621;
   top: 35%;
   right: 10%;
 }
-.eeCode.javascript {
+.eeCodes .eeCode.javascript {
   color: #4EC3C8;
   top: 35%;
   left: 10%;
 }
-.eeCode.php {
+.eeCodes .eeCode.php {
   color: #282621;
   top: 55%;
   left: 15%;
 }
-.eeCode.mysql {
+.eeCodes .eeCode.mysql {
   color: #4EC3C8;
   top: 55%;
   right: 15%;
 }
-.eeCode.sass {
+.eeCodes .eeCode.sass {
   color: #282621;
   top: 75%;
   right: 20%;
 }
-.eeCode.java {
+.eeCodes .eeCode.java {
   color: #4EC3C8;
   top: 75%;
   left: 20%;
+}
+@media (min-width: 0px) and (max-width: 479px) {
+  .eeCodes .eeCode {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px 0;
+  }
+  .eeCodes .eeCode:nth-of-type(2n) {
+    margin-right: 0;
+    float: left;
+  }
+  .eeCodes .eeCode:nth-of-type(2n + 1) {
+    clear: none;
+  }
+  .eeCodes .eeCode:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 959px) {
+  .eeCodes .eeCode {
+    float: left;
+    clear: none;
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px 0;
+  }
+  .eeCodes .eeCode:nth-of-type(2n) {
+    margin-right: 0;
+    float: right;
+  }
+  .eeCodes .eeCode:nth-of-type(2n + 1) {
+    clear: both;
+  }
+}
+@media (max-width: 959px) {
+  .eeCodes .eeCode {
+    position: relative;
+    top: inherit;
+    text-align: center;
+  }
+  .eeCodes .eeCode.html, .eeCodes .eeCode.javascript, .eeCodes .eeCode.php, .eeCodes .eeCode.java {
+    left: inherit;
+  }
+  .eeCodes .eeCode.css, .eeCodes .eeCode.jquery, .eeCodes .eeCode.mysql, .eeCodes .eeCode.sass {
+    right: inherit;
+  }
 }
 
 header {
@@ -268,6 +324,11 @@ header .eeLogo p span {
 .eeDefaultWrap.eeSocial {
   text-align: center;
   padding: 60px 0;
+}
+@media (max-width: 959px) {
+  .eeDefaultWrap.eeSocial {
+    padding: 30px 0;
+  }
 }
 .eeDefaultWrap.eeSocial ul {
   display: inline-block;
@@ -300,7 +361,14 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  display: block;
 }
 footer p {
   color: #4EC3C8;
+}
+@media (max-width: 959px) {
+  footer {
+    position: relative;
+    bottom: inherit;
+  }
 }

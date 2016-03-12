@@ -10,59 +10,95 @@
 	max-width: 1024px;
 	margin: 0 auto;
 }
-
-.eeCode{
-	position: absolute;
-	display: block;
-	font-size: 40px;
-	opacity: 0.5;
-	font-family: $font4;
-	
-	&.html{
-		color: $color;
-		top: 10%;
-    	left: 15%; 
-	}
-	&.css{
-		color: $color3;
-		top: 10%;
-    	right: 15%;
-	}
-	&.jquery{
-		color: $color;
-		top: 35%;
-		right: 10%; 
-	}
-	&.javascript{
-		color: $color3;
-		top: 35%;
-		left: 10%; 
+.eeCodes{
+	@include breakpoint(max-width 959px){
+		overflow: hidden;
+		padding: 30px 0;
 	}
 	
-	&.php{
-		color: $color;
-		top: 55%;
-		left: 15%; 
-	}
-	&.mysql{
-		color: $color3;
-		top: 55%;
-		right: 15%; 
-	}
-	&.sass{
-		color: $color;
-		top: 75%;
-    	right: 20%; 
-	}
-	&.java{ 
-		color: $color3;
-		top: 75%;
-    	left: 20%;
+	.eeCode{
+		position: absolute;
+		display: block;
+		font-size: 40px;
+		opacity: 0.5;
+		font-family: $font4;
+		
+		&.html{
+			color: $color;
+			top: 10%;
+	    	left: 15%; 
+		}
+		&.css{
+			color: $color3;
+			top: 10%;
+	    	right: 15%;
+		}
+		&.jquery{
+			color: $color;
+			top: 35%;
+			right: 10%; 
+		}
+		&.javascript{
+			color: $color3;
+			top: 35%;
+			left: 10%; 
+		}
+		
+		&.php{
+			color: $color;
+			top: 55%;
+			left: 15%; 
+		}
+		&.mysql{
+			color: $color3;
+			top: 55%;
+			right: 15%; 
+		}
+		&.sass{
+			color: $color;
+			top: 75%;
+	    	right: 20%; 
+		}
+		&.java{ 
+			color: $color3;
+			top: 75%;
+	    	left: 20%;
+		}
+		@include breakpoint(479px 0px){
+			@include column(1, $gutter: 0, $uncycle: 2);
+			padding: 15px 0;
+		}
+		@include breakpoint(959px 480px){
+			@include column(.5, $gutter: 0, $cycle: 2);
+			padding: 15px 0;
+		}
+		@include breakpoint(max-width 959px){
+			position: relative;
+			top: inherit;
+			text-align: center;
+			
+			
+			&.html,
+			&.javascript,
+			&.php,
+			&.java{
+				left: inherit;
+			}
+			
+			&.css,
+			&.jquery,
+			&.mysql,
+			&.sass{
+				right: inherit;
+			}
+		}
 	}
 }
 
+
 header{
 	padding: 60px 0 30px;
+	
 	.eeLogo{
 		display: block;
 		width: 251px;
@@ -93,6 +129,10 @@ header{
 	&.eeSocial{
 		text-align: center;
 		padding: 60px 0;
+		
+		@include breakpoint(max-width 959px){
+			padding: 30px 0;
+		}
 		
 		ul{
 			display: inline-block;
@@ -134,8 +174,14 @@ footer{
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	display: block;
 	
 	p{
 		color: $color3;
+	}
+	
+	@include breakpoint(max-width 959px){
+		position: relative;
+		bottom: inherit;
 	}
 }
