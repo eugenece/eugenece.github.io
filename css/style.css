@@ -196,48 +196,49 @@
 .eeCode {
   position: absolute;
   display: block;
-  font-size: 45px;
+  font-size: 40px;
   opacity: 0.5;
+  font-family: "Arvo", serif;
 }
 .eeCode.html {
   color: #282621;
   top: 10%;
-  left: 25%;
+  left: 15%;
 }
 .eeCode.css {
   color: #4EC3C8;
   top: 10%;
-  right: 25%;
+  right: 15%;
 }
 .eeCode.jquery {
   color: #282621;
   top: 35%;
-  right: 15%;
+  right: 10%;
 }
 .eeCode.javascript {
   color: #4EC3C8;
   top: 35%;
-  left: 15%;
+  left: 10%;
 }
 .eeCode.php {
   color: #282621;
   top: 55%;
-  left: 20%;
+  left: 15%;
 }
 .eeCode.mysql {
   color: #4EC3C8;
   top: 55%;
-  right: 20%;
+  right: 15%;
 }
 .eeCode.sass {
   color: #282621;
   top: 75%;
-  right: 25%;
+  right: 20%;
 }
 .eeCode.java {
   color: #4EC3C8;
   top: 75%;
-  left: 25%;
+  left: 20%;
 }
 
 header {
@@ -246,8 +247,22 @@ header {
 header .eeLogo {
   display: block;
   width: 251px;
-  height: 238px;
+  height: auto;
   margin: 0 auto;
+  text-decoration: none;
+}
+header .eeLogo img {
+  display: block;
+  margin-bottom: 15px;
+}
+header .eeLogo p {
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+header .eeLogo p span {
+  font: inherit;
 }
 
 .eeDefaultWrap.eeSocial {
@@ -275,7 +290,7 @@ header .eeLogo {
 }
 .eeDefaultWrap.eeSocial ul li a:hover i {
   color: #4EC3C8;
-  transform: translate(10);
+  transform: scale(1.2);
 }
 
 footer {

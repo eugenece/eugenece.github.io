@@ -14,49 +14,50 @@
 .eeCode{
 	position: absolute;
 	display: block;
-	font-size: 45px;
+	font-size: 40px;
 	opacity: 0.5;
+	font-family: $font4;
 	
 	&.html{
 		color: $color;
 		top: 10%;
-    	left: 25%; 
+    	left: 15%; 
 	}
 	&.css{
 		color: $color3;
 		top: 10%;
-    	right: 25%;
+    	right: 15%;
 	}
 	&.jquery{
 		color: $color;
 		top: 35%;
-		right: 15%; 
+		right: 10%; 
 	}
 	&.javascript{
 		color: $color3;
 		top: 35%;
-		left: 15%; 
+		left: 10%; 
 	}
 	
 	&.php{
 		color: $color;
 		top: 55%;
-		left: 20%; 
+		left: 15%; 
 	}
 	&.mysql{
 		color: $color3;
 		top: 55%;
-		right: 20%; 
+		right: 15%; 
 	}
 	&.sass{
 		color: $color;
 		top: 75%;
-    	right: 25%; 
+    	right: 20%; 
 	}
 	&.java{ 
 		color: $color3;
 		top: 75%;
-    	left: 25%;
+    	left: 20%;
 	}
 }
 
@@ -65,8 +66,26 @@ header{
 	.eeLogo{
 		display: block;
 		width: 251px;
-		height: 238px;
+		height: auto;
 		margin: 0 auto;
+		text-decoration: none;
+		
+		img{
+			display: block;
+			margin-bottom: 15px;
+		}
+		
+		p{
+			text-align: center;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: bold;
+			
+			
+			span{
+				font: inherit;
+			}
+		}
 	}
 }
 
@@ -98,7 +117,8 @@ header{
 					&:hover{
 						i{
 							color: $color3;
-							transform: translate(10);
+							//transform: translate(10);
+							transform: scale(1.2);
 						}
 					}
 				}
